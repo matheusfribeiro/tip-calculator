@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: rgb(151, 146, 146);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: beige;
+}
+.container header {
+  padding: 15px;
+  background-color: rgb(4, 4, 98);
+  color: #fff;
+  font-size: 1.3em;
+}
+.container .tipcalculator {
+  height: 350px;
+  display: flex;
+}
+.container .tipcalculator .bill {
+  width: 50%;
+  margin: 10px;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(99, 213, 235, 0.8);
+}
+.container .tipcalculator .bill .amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.container .tipcalculator .bill .amount .input {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.container .tipcalculator .bill .selecttip {
+  display: flex;
+  flex-direction: column;
+}
+.container .tipcalculator .bill .selecttip .label {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.container .tipcalculator .bill .selecttip .tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .tipcalculator .bill .selecttip .tips .tipbutton {
+  background-color: #420eff;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.container .tipcalculator .bill .selecttip .tips .tipbutton:hover {
+  background-color: black;
+}
+.container .tipcalculator .bill .people {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.container .tipcalculator .bill .people .input {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.container .tipcalculator .result {
+  width: 50%;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 170, 255);
+}
+.container .tipcalculator .result .box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #006aff;
+}
+.container .tipcalculator .result .reset {
+  margin-top: auto;
+}
+.container .tipcalculator .result .reset .resetbutton {
+  padding: 4px;
+  width: 100%;
+}
+.container footer {
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */

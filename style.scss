@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color:rgb(151, 146, 146);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: beige;
+  
+
+  header {
+    padding: 15px;
+    background-color: rgb(4, 4, 98);
+    color: #fff;
+    font-size: 1.3em;
+  }
+
+  .tipcalculator {
+    height: 350px; // FIX HEIGHT ON DIFFERENT SCREENS
+    display: flex;
+
+    .bill {
+      width: 50%;
+      margin: 10px;
+      padding: 5px 15px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #63d5ebcc;
+
+
+      .amount {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+        
+
+        .input {
+          width: 100%;
+          padding: 8px 16px;
+          margin: 4px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          outline: none;
+        }
+      }
+
+      .selecttip {
+        display: flex;
+        flex-direction: column;
+        
+        .label {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 5px;
+        }
+
+        .tips {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          
+
+          .tipbutton {
+            background-color: #420eff;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+
+            &:hover {
+              background-color: black;
+            }
+          }
+        }
+        
+      }
+
+      .people {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+        
+
+        .input {
+          width: 100%;
+          padding: 8px 16px;
+          margin: 4px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          outline: none;
+        }
+      }
+    }
+
+    .result {
+      width: 50%;
+      padding: 25px;
+      margin: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0, 170, 255);
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #006aff;
+      }
+
+      .reset {
+        margin-top: auto;
+
+        .resetbutton {
+          padding: 4px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    background-color: aqua;
+
+  }
+}
