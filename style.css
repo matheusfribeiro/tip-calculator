@@ -12,7 +12,7 @@ body {
   height: 100vh;
   min-height: 100vh;
   font-size: 16px;
-  background-color: rgb(151, 146, 146);
+  background-color: hsl(172deg, 67%, 45%);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 .container header {
   padding: 15px;
-  background-color: rgb(4, 4, 98);
+  background-color: hsl(172deg, 68%, 32%);
   color: #fff;
   font-size: 1.3em;
 }
@@ -37,7 +37,7 @@ body {
   padding: 5px 15px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgba(99, 213, 235, 0.8);
+  background-color: hsl(189deg, 41%, 97%);
 }
 .container .tipcalculator .bill .amount {
   display: flex;
@@ -68,7 +68,7 @@ body {
   justify-content: space-between;
 }
 .container .tipcalculator .bill .selecttip .tips .tipbutton {
-  background-color: #420eff;
+  background-color: hsl(183deg, 100%, 15%);
   border: none;
   color: white;
   padding: 12px 20px;
@@ -77,7 +77,7 @@ body {
   font-size: 16px;
 }
 .container .tipcalculator .bill .selecttip .tips .tipbutton:hover {
-  background-color: black;
+  background-color: hsl(185deg, 41%, 84%);
 }
 .container .tipcalculator .bill .people {
   display: flex;
@@ -100,7 +100,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 170, 255);
+  background-color: hsl(183deg, 100%, 15%);
 }
 .container .tipcalculator .result .box {
   display: flex;
@@ -108,7 +108,8 @@ body {
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 10px;
-  background-color: #006aff;
+  background-color: hsl(183deg, 100%, 15%);
+  color: white;
 }
 .container .tipcalculator .result .reset {
   margin-top: auto;
@@ -116,11 +117,16 @@ body {
 .container .tipcalculator .result .reset .resetbutton {
   padding: 4px;
   width: 100%;
+  background-color: hsl(172deg, 67%, 45%);
+}
+.container .tipcalculator .result .reset .resetbutton:hover {
+  background-color: hsl(185deg, 41%, 84%);
 }
 .container footer {
   padding: 20px 0;
   width: 100%;
   margin-top: auto;
   text-align: center;
-  background-color: aqua;
+  background-color: hsl(172deg, 68%, 32%);
+  color: white;
 }/*# sourceMappingURL=style.css.map */
