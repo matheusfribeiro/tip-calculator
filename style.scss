@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   background-color: beige;
   
@@ -73,17 +73,21 @@ body {
         .tips {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: space-around;
           
 
           .tipbutton {
             background-color: hsl(183, 100%, 15%);
             border: none;
             color: white;
-            padding: 12px 20px;
             text-align: center;
+            align-items: center;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
+            margin: 3px 2px;
+            height: 30px;
+            width: 80px;
+
 
             &:hover {
               background-color: hsl(185, 41%, 84%);
