@@ -18,26 +18,26 @@
 
         <div class="amount">
           <label class="label" for="">Bill</label>
-          <input placeholder="$" class="input" type="text">
+          <input id="bill" placeholder="$" class="input" type="text">
         </div>
 
         <div class="selecttip">
           <label class="label" for="">Select Tip</label>
 
           <div class="tips">
-            <button class="tipbutton">5%</button>
-            <button class="tipbutton">10%</button>
-            <button class="tipbutton">15%</button>
-            <button class="tipbutton">20%</button>
-            <button class="tipbutton">25%</button>
-            <button class="tipbutton">Custom</button>
+            <button value="5" data-gorjeta class="tipbutton">5%</button>
+            <button value="10" data-gorjeta class="tipbutton">10%</button>
+            <button value="15" data-gorjeta class="tipbutton">15%</button>
+            <button value="20" data-gorjeta class="tipbutton">20%</button>
+            <button value="25" data-gorjeta class="tipbutton">25%</button>
+            <button value="custom" data-gorjeta class="tipbutton">Custom</button>
           </div>
           
         </div>
 
         <div class="people">
           <label class="label" for="">Number of people</label>
-          <input class="input" type="text">
+          <input id="numberofpeople" class="input" type="text">
         </div>
 
       </div>
@@ -46,19 +46,22 @@
 
         <div class="box">
 
-          <div>TIP AMOUNT</div> <div>$8,52</div>
+          <h3>TIP AMOUNT</h3> <h3>$8.50</h3>
 
         </div>
 
         <div class="box">
           
-          <div>TOTAL</div> <div>$50</div>
+          <h3>TOTAL</h3> <h3>$50</h3>
 
         </div>
 
-        <div class="reset">
-          <button class="resetbutton">RESET</button>
+        <div class="action">
+          <button id="calculate" class="actionbutton">Calculate</button>
+        </div>
 
+        <div class="action">
+          <button id="reset" class="actionbutton">RESET</button>
         </div>
 
       </div>
@@ -80,5 +83,6 @@
   
   
 
+  <script src="script.js"></script>
 </body>
 </html>

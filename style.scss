@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
 
 body {
   display: flex;
@@ -13,13 +17,15 @@ body {
   min-height: 100vh;
   font-size: 16px;
   background-color: hsl(172, 67%, 45%);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+  font-family: 'Space Mono', monospace;}
 
 .container {
   max-width: 650px;
   width: 100%;
   background-color: beige;
+  border-radius: 20px;
+
+
   
 
   header {
@@ -27,6 +33,8 @@ body {
     background-color: hsl(172, 68%, 32%);
     color: #fff;
     font-size: 1.3em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .tipcalculator {
@@ -133,16 +141,20 @@ body {
         border-radius: 10px;
         background-color: hsl(183, 100%, 15%);
         color: white;
+
+        
       }
 
-      .reset {
+      .action {
         margin-top: auto;
         
 
-        .resetbutton {
+        .actionbutton {
           padding: 4px;
           width: 100%;
           background-color: hsl(172, 67%, 45%);
+          color: hsl(189, 41%, 97%);
+          font-family: 'Space Mono', monospace;
 
           &:hover {
             background-color: hsl(185, 41%, 84%);
@@ -159,6 +171,8 @@ body {
     text-align: center;
     background-color: hsl(172, 68%, 32%);
     color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
   }
 }

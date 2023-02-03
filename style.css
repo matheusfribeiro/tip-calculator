@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,19 +14,22 @@ body {
   min-height: 100vh;
   font-size: 16px;
   background-color: hsl(172deg, 67%, 45%);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Space Mono", monospace;
 }
 
 .container {
   max-width: 650px;
   width: 100%;
   background-color: beige;
+  border-radius: 20px;
 }
 .container header {
   padding: 15px;
   background-color: hsl(172deg, 68%, 32%);
   color: #fff;
   font-size: 1.3em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .container .tipcalculator {
   height: 350px;
@@ -114,15 +118,17 @@ body {
   background-color: hsl(183deg, 100%, 15%);
   color: white;
 }
-.container .tipcalculator .result .reset {
+.container .tipcalculator .result .action {
   margin-top: auto;
 }
-.container .tipcalculator .result .reset .resetbutton {
+.container .tipcalculator .result .action .actionbutton {
   padding: 4px;
   width: 100%;
   background-color: hsl(172deg, 67%, 45%);
+  color: hsl(189deg, 41%, 97%);
+  font-family: "Space Mono", monospace;
 }
-.container .tipcalculator .result .reset .resetbutton:hover {
+.container .tipcalculator .result .action .actionbutton:hover {
   background-color: hsl(185deg, 41%, 84%);
 }
 .container footer {
@@ -132,4 +138,6 @@ body {
   text-align: center;
   background-color: hsl(172deg, 68%, 32%);
   color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
