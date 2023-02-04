@@ -1,22 +1,34 @@
-let bill = document.querySelector('#bill')
-let numberofpeople = document.querySelector('#numberofpeople')
+let splitresult = document.querySelector('#splitresult')
+let totalresult = document.querySelector('#totalresult')
 
-let tipbutton = document.querySelectorAll('[data-gorjeta]')
+// BILL
+let billInput = document.querySelector('#bill')
+billInput.onblur = function getBill() {
+  bill = billInput.value
+  console.log(bill)
+  return bill
+}
+
+
+// SELECT TIP
+let tipbutton = document.querySelectorAll('[data-tip]')
 
 tipbutton.forEach((tip) => {
-  tip.addEventListener('click', event => console.log(tip.value))
+  return tip.addEventListener('click', event => console.log(tip.value))
+
+  
 })
 
 
+//NUMBER OF PEOPLE
+let numberofpeopleInput = document.querySelector('#numberofpeople')
+numberofpeopleInput.onblur = function getPeople() {
+  numberofpeople = numberofpeopleInput.value
+  console.log(numberofpeople)
+  return numberofpeople
+}
 
 
 
-
-
-
-
-
-
-//document.querySelector('.tips').addEventListener('click', event => console.log(event.target.closest('.tipbutton').value))
 
 
