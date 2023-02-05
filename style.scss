@@ -14,10 +14,15 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  width: 100%;
   min-height: 100vh;
   font-size: 16px;
   background-color: hsl(172, 67%, 45%);
-  font-family: 'Space Mono', monospace;}
+  font-family: 'Space Mono', monospace;
+
+  
+  
+}
 
 .container {
   max-width: 650px;
@@ -41,6 +46,21 @@ body {
     height: 350px; // FIX HEIGHT ON DIFFERENT SCREENS
     display: flex;
 
+    .input {
+      width: 100%;
+      padding: 6px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      text-align: right;
+      font-family: 'Space Mono', monospace;
+      background-image: url("images/icon-dollar.svg");
+      background-repeat: no-repeat;
+      background-position: 10px;
+
+    }
+
     .bill {
       width: 50%;
       margin: 10px;
@@ -58,48 +78,72 @@ body {
 
         
 
-        .input {
-          width: 100%;
-          padding: 8px 16px;
-          margin: 4px 0;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          outline: none;
-        }
+        
       }
 
       .selecttip {
         display: flex;
         flex-direction: column;
+
+        
+        
         
         .label {
           display: flex;
           flex-wrap: wrap;
           padding: 5px;
+
+         
         }
 
-        .tips {
+        .tip {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
+
+          
+          
           
 
-          .tipbutton {
+          .tips {
             background-color: hsl(183, 100%, 15%);
-            border: none;
-            color: white;
-            text-align: center;
+            display: flex;
+            justify-content: center;
             align-items: center;
+            border: none;
+            text-align: center;
             text-decoration: none;
+            color: white;
             font-size: 14px;
             margin: 3px 2px;
             height: 30px;
             width: 80px;
-
+            cursor: pointer;
 
             &:hover {
               background-color: hsl(185, 41%, 84%);
             }
+
+            input {
+              background-color: hsl(183, 100%, 15%);
+              width: 100%;
+              color: white;
+              border: none;
+              outline: none;
+              padding: 6px;
+              text-align: center;
+              font-size: 14px;
+              font-weight: bolder;
+              font-family: 'Space Mono', monospace;
+            }
+
+          }
+
+
+          .active {
+            background-color: hsl(172, 67%, 45%);
+            font-weight: bolder;
+            color: hsl(183, 100%, 15%);
           }
         }
         
@@ -107,21 +151,32 @@ body {
 
       .people {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 20px 0;
-
+        justify-content: space-between;
+        margin: 10px 0;
+    
         
-
-        .input {
-          width: 100%;
-          padding: 8px 16px;
-          margin: 4px 0;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          outline: none;
+        label {
+          font-size: 14px;
+          
         }
+        .error {
+          color: red;
+          display: none;
+          font-size: 14px;
+        }
+
+    
       }
+      input.error {
+        border: thick solid red;
+        color: red;
+      }
+
+      .input {
+        background-image: url('images/icon-person.svg');
+      }
+
+      
     }
 
     .result {
@@ -173,6 +228,10 @@ body {
     color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    a {
+      color: hsl(185, 41%, 84%);
+    }
 
   }
 }

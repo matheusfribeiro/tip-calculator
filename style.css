@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  width: 100%;
   min-height: 100vh;
   font-size: 16px;
   background-color: hsl(172deg, 67%, 45%);
@@ -35,6 +36,19 @@ body {
   height: 350px;
   display: flex;
 }
+.container .tipcalculator .input {
+  width: 100%;
+  padding: 6px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
 .container .tipcalculator .bill {
   width: 50%;
   margin: 10px;
@@ -49,14 +63,6 @@ body {
   align-items: flex-start;
   margin: 20px 0;
 }
-.container .tipcalculator .bill .amount .input {
-  width: 100%;
-  padding: 8px 16px;
-  margin: 4px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-}
 .container .tipcalculator .bill .selecttip {
   display: flex;
   flex-direction: column;
@@ -66,39 +72,65 @@ body {
   flex-wrap: wrap;
   padding: 5px;
 }
-.container .tipcalculator .bill .selecttip .tips {
+.container .tipcalculator .bill .selecttip .tip {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.container .tipcalculator .bill .selecttip .tips .tipbutton {
+.container .tipcalculator .bill .selecttip .tip .tips {
   background-color: hsl(183deg, 100%, 15%);
-  border: none;
-  color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  border: none;
+  text-align: center;
   text-decoration: none;
+  color: white;
   font-size: 14px;
   margin: 3px 2px;
   height: 30px;
   width: 80px;
+  cursor: pointer;
 }
-.container .tipcalculator .bill .selecttip .tips .tipbutton:hover {
+.container .tipcalculator .bill .selecttip .tip .tips:hover {
   background-color: hsl(185deg, 41%, 84%);
+}
+.container .tipcalculator .bill .selecttip .tip .tips input {
+  background-color: hsl(183deg, 100%, 15%);
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: "Space Mono", monospace;
+}
+.container .tipcalculator .bill .selecttip .tip .active {
+  background-color: hsl(172deg, 67%, 45%);
+  font-weight: bolder;
+  color: hsl(183deg, 100%, 15%);
 }
 .container .tipcalculator .bill .people {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px 0;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-.container .tipcalculator .bill .people .input {
-  width: 100%;
-  padding: 8px 16px;
-  margin: 4px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
+.container .tipcalculator .bill .people label {
+  font-size: 14px;
+}
+.container .tipcalculator .bill .people .error {
+  color: red;
+  display: none;
+  font-size: 14px;
+}
+.container .tipcalculator .bill input.error {
+  border: thick solid red;
+  color: red;
+}
+.container .tipcalculator .bill .input {
+  background-image: url("images/icon-person.svg");
 }
 .container .tipcalculator .result {
   width: 50%;
@@ -140,4 +172,7 @@ body {
   color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.container footer a {
+  color: hsl(185deg, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */
