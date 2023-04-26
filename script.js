@@ -20,7 +20,6 @@ function getBill() {
   calculate()
 }
 
-
 // SELECT TIP
 
 let tipPerc = 0.15
@@ -53,7 +52,6 @@ tipCustom.oninput = customFunc
   calculate()
  }
 
-
 //NUMBER OF PEOPLE
 numberofpeopleInput.value = '1'
 numberofpeopleInput.oninput = getPeople
@@ -73,9 +71,7 @@ function getPeople() {
   }
 }
 
-
 //CALCULATE
-
 function calculate() {
   if (numberofpeople >= 1) {
     let tipAmount = (bill * tipPerc) / numberofpeople
@@ -97,10 +93,4 @@ function reset() {
   numberofpeopleInput.value = 1
   getPeople()
   tipCustom.value = '0'
-
-
 }
-
-
-
-

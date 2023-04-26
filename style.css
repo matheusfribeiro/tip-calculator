@@ -176,3 +176,12 @@ body {
 .container footer a {
   color: hsl(185deg, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+@media (max-width: 400px) {
+  body {
+    background-color: black;
+  }
+}
